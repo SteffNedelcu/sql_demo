@@ -38,4 +38,7 @@
 -- #9 Sa se afiseze pentru un utilizator ( cautat dupa id, ex: 149) toate prousele comandate si cantitatea
 -- | name | total_quantity |
 
+-- #10 Dezactiveaza toate comenzile (status=0) clientii barbati
+-- Trebuie folosita o subcerere si conditia IN in clauza WHERE
+
 

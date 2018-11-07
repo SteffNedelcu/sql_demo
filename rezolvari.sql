@@ -81,3 +81,9 @@ LEFT JOIN `orders` as ord ON (ord.id = op.id_order)
 LEFT JOIN `customers` as c ON (ord.id_customer = c.id)
 WHERE c.id = '149'
 GROUP BY op.id_product
+
+-- #10 Dezactiveaza toate comenzile (status=0) clientului cu id-ul 149
+
+UPDATE orders SET
+`status` = 0
+WHERE id IN (SELECT id FROM customers WHERE gender = 'M')
